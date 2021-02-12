@@ -6,7 +6,17 @@ ModelImporter:
   - first:
       74: 7624791667219614620
     second: Cat Rig|Cat RigAction
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cat
+    second: {fileID: 2100000, guid: 4ee8827a65fb9872e831048f5cfcea9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Equipment
+    second: {fileID: 2100000, guid: ed341c8a45157cfad915e1d1df5a50b0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -27,6 +27,13 @@ public class ThirdPersonController : MonoBehaviour
 
     void Update()
     {
+        PlayerMovement();
+        Jumping();
+        
+    }
+
+    void PlayerMovement()
+    {
         // Player movement
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -41,7 +48,10 @@ public class ThirdPersonController : MonoBehaviour
             Vector3 moverDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moverDir.normalized * speed * Time.deltaTime);
         }
+    }
 
+    void Jumping()
+    {
         // Jumping
         if (Input.GetKeyDown(KeyCode.V) && isGrounded)
         {
